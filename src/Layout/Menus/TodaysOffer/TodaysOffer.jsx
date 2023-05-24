@@ -7,6 +7,7 @@ import img from '../../../assets/menu/dessert-bg.jpeg'
 import img2 from '../../../assets/menu/pizza-bg.jpg'
 import img3 from '../../../assets/menu/salad-bg.jpg'
 import img4 from '../../../assets/menu/soup-bg.jpg'
+import { Link } from 'react-router-dom';
 
 const TodaysOffer = () => {
     const [menu] = useMenu();
@@ -40,7 +41,14 @@ const TodaysOffer = () => {
                         />)
 
                     }
+
+
                 </div>
+                <Link to='/OurShop'>
+                    <div className='flex justify-center'>
+                        <button className='btn btn-outline hover:bg-yellow-600 hover:border-yellow-600 border-0 border-b-4  my-2 border-yellow-600'>ORDER YOUR FAVOURITE FOOD</button>
+                    </div>
+                </Link>
             </div>
 
             {/* //Dessert: Section: */}
@@ -75,9 +83,11 @@ const TodaysOffer = () => {
 
 
                 </div>
-                <div className='flex justify-center'>
-                    <button className='btn btn-outline hover:bg-yellow-600 hover:border-yellow-600 border-0 border-b-4  my-2 border-yellow-600'>ORDER YOUR FAVOURITE FOOD</button>
-                </div>
+                <Link to='/OurShop'>
+                    <div className='flex justify-center'>
+                        <button className='btn btn-outline hover:bg-yellow-600 hover:border-yellow-600 border-0 border-b-4  my-2 border-yellow-600'>ORDER YOUR FAVOURITE FOOD</button>
+                    </div>
+                </Link>
 
             </div>
 
@@ -114,9 +124,11 @@ const TodaysOffer = () => {
 
 
                 </div>
-                <div className='flex justify-center'>
-                    <button className='btn btn-outline hover:bg-yellow-600 hover:border-yellow-600 border-0 border-b-4  my-2 border-yellow-600'>ORDER YOUR FAVOURITE FOOD</button>
-                </div>
+                <Link to='/OurShop'>
+                    <div className='flex justify-center'>
+                        <button className='btn btn-outline hover:bg-yellow-600 hover:border-yellow-600 border-0 border-b-4  my-2 border-yellow-600'>ORDER YOUR FAVOURITE FOOD</button>
+                    </div>
+                </Link>
 
             </div>
 
@@ -153,9 +165,11 @@ const TodaysOffer = () => {
 
 
                 </div>
-                <div className='flex justify-center'>
-                    <button className='btn btn-outline hover:bg-yellow-600 hover:border-yellow-600 border-0 border-b-4  my-2 border-yellow-600'>ORDER YOUR FAVOURITE FOOD</button>
-                </div>
+                <Link to='/OurShop'>
+                    <div className='flex justify-center'>
+                        <button className='btn btn-outline hover:bg-yellow-600 hover:border-yellow-600 border-0 border-b-4  my-2 border-yellow-600'>ORDER YOUR FAVOURITE FOOD</button>
+                    </div>
+                </Link>
 
             </div>
 
@@ -191,9 +205,11 @@ const TodaysOffer = () => {
 
 
                 </div>
-                <div className='flex justify-center'>
-                    <button className='btn btn-outline hover:bg-yellow-600 hover:border-yellow-600 border-0 border-b-4  my-2 border-yellow-600'>ORDER YOUR FAVOURITE FOOD</button>
-                </div>
+                <Link to='/OurShop'>
+                    <div className='flex justify-center'>
+                        <button className='btn btn-outline hover:bg-yellow-600 hover:border-yellow-600 border-0 border-b-4  my-2 border-yellow-600'>ORDER YOUR FAVOURITE FOOD</button>
+                    </div>
+                </Link>
 
             </div>
 

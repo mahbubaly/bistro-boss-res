@@ -14,7 +14,7 @@ const FeaturesItem = ({ item }) => {
                 <div className="card-body ">
                     <h2 className="card-title">{name}</h2>
                     <p>{recipe}</p>
-                    <div className="card-actions">
+                    <div className="card-actions flex justify-end mt-4">
                         <h3 className='font-semibold'>Price: <span className='text-yellow-500 ml-2'>${price}</span></h3>
                     </div>
 
