@@ -61,9 +61,7 @@ const Category = () => {
                         <img src={slide5} alt="" />
                         <h1 className="md:text-3xl text-xl uppercase text-center -mt-16 text-white">italian salad</h1>
                     </SwiperSlide>
-                    {/* <SwiperSlide> 
-                    <img src={slide6} alt="" />
-                </SwiperSlide> */}
+                
 
                 </Swiper>
 

@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <>
             <footer>
-                <div className="footer p-10 bg-neutral text-neutral-content">
+                <div className="footer p-10 bg-[#1F2937] text-neutral-content">
                     <div>
                         <h1>CONTACT US</h1>
                         <p>123 ABS Street, Uni 21, Bangladesh <br />
