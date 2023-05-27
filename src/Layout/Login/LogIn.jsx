@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const LogIn = () => {
     const [disabled, setDisabled] = useState(true);
-    const {loading , signIn} = useContext(AuthContext)
+    const { loading, signIn } = useContext(AuthContext)
 
     // const validateRef = useRef(null);
 
@@ -22,10 +22,10 @@ const LogIn = () => {
         const password = form.password.value;
         console.log(email, password);
         signIn(email, password)
-        .then(result => {
-            const user= result.user;
-            console.log(user);
-        })
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+            })
 
     }
 
@@ -38,7 +38,7 @@ const LogIn = () => {
 
         if (validateCaptcha(Captcha_value)) {
             setDisabled(false);
-            
+
 
         }
         else {
@@ -51,13 +51,13 @@ const LogIn = () => {
         <>
 
 
-            <div className='flex  mt-10'>
-                <img className='w-1/2' src={img} alt="" />
+            <div className='lg:flex  mt-10'>
+                <img className='w-1/2 mx-auto' src={img} alt="" />
 
                 <div className="mx-auto w-1/2 text-right">
                     <div className=" flex-col ">
                         <div className="text-center ">
-                            <h1 className="text-5xl font-bold">Login now!</h1>
+                            <h1 className="lg:text-5xl text-3xl font-bold">Login now!</h1>
 
                         </div>
                         <div className='flex justify-center mt-7'>
@@ -82,14 +82,16 @@ const LogIn = () => {
                                         <label className="label">
                                             <LoadCanvasTemplate />
                                         </label>
-                                        <input onBlur={handlerValidate}  type="text" placeholder="Type here" className="input input-bordered" />
-                                        
+                                        <input onBlur={handlerValidate} type="text" placeholder="Type here" className="input input-bordered" />
+
 
                                     </div>
                                     <div className="form-control mt-6">
 
-                                        <input disabled={disabled} className="btn btn-outline  border-0 border-b-4 border-yellow-500 text-black hover:bg-yellow-500 hover:border-yellow-500 " type="submit" value='log in' />
+                                        <input className="btn btn-outline  border-0 border-b-4 hover:bg-[#D1A054] text-white border-none bg-[#D1A054] bg-opacity-70  " type="submit" value='log in' />
                                     </div>
+
+                                    <Link className='mx-auto hover:underline text-[#D1A054] flex justify-center my-8 ' to='/signIn'><button className=''>New here? Create a New Account </button></Link>
                                 </div>
                             </form>
                         </div>
