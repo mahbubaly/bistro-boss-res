@@ -1,12 +1,13 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import img from '../../../assets/contact/authentication2 1.png'
-import { Link } from 'react-router-dom';
+import { Link,  useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../../../Providers/AuthProvider';
 
 const SignIn = () => {
     const [error, setError] = useState('');
+    const navigate = useNavigate();
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const { createUser } = useContext(AuthContext);
@@ -28,6 +29,8 @@ const SignIn = () => {
             }).catch(error => {
                 console.log(error.message);
             })
+
+            navigate('/');
 
     };
 

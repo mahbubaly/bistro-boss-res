@@ -1,17 +1,36 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from '../../Providers/AuthProvider';
 
 const Nav = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.log(error));
+    }
 
     const navbar = <>
 
         <div className="flex lg:flex-row flex-col  gap-4">
             <Link className="hover:underline" to='/'> Home</Link>
-            
+
             <Link className="hover:underline" to='/contactUs'> Contact Us</Link>
             <Link className="hover:underline" to='/menu'> Our Menu</Link>
             <Link className="hover:underline" to='/ourShop'> Order Food</Link>
-            <Link className="hover:underline" to='/login'>Log in</Link>
-            <Link className="hover:underline" to='/signIn'>Sign Up</Link>
+            {
+                user ? <Link onClick={handleLogOut} className="hover:underline" >Log out</Link>
+                    : <>
+                        <Link className="hover:underline" to='/login'>Log in</Link>
+                        <Link className="hover:underline" to='/signIn'>Sign Up</Link>
+
+                    </>
+
+            }
+
+            <Link className="hover:underline" to='/inbox'>inbox</Link>
         </div>
 
 

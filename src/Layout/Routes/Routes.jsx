@@ -9,6 +9,8 @@ import OurShop from "../OurShop/OurShop";
 import LogIn from "../Login/LogIn";
 import SignIn from "../Login/SignIn/SignIn";
 import ContactUs from "../ContactUs/ContactUs";
+import Inbox from "../InboxPage/Inbox";
+import Private from "./PrivateRoutes/Private";
 
 export const router = createBrowserRouter([
     {
@@ -39,6 +41,10 @@ export const router = createBrowserRouter([
             {
                 path: '/contactUs',
                 element: <ContactUs />
+            },
+            {
+                path: '/inbox',
+                element: <Private><Inbox /></Private>
             }
         ]
     },

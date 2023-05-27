@@ -2,11 +2,14 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import img from '../../assets/contact/authentication2 1.png'
 import { loadCaptchaEnginge, LoadCanvasTemplate, LoadCanvasTemplateNoReload, validateCaptcha } from 'react-simple-captcha';
 import { AuthContext } from '../../Providers/AuthProvider';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 
 const LogIn = () => {
     const [disabled, setDisabled] = useState(true);
-    const { loading, signIn } = useContext(AuthContext)
+    const { loading, signIn } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
 
     // const validateRef = useRef(null);
 
@@ -26,6 +29,8 @@ const LogIn = () => {
                 const user = result.user;
                 console.log(user);
             })
+
+            navigate(from, { replace: true });
 
     }
 
