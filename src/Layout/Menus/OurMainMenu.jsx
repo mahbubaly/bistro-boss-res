@@ -6,7 +6,7 @@ import TodaysOffer from './TodaysOffer/TodaysOffer';
 
 const OurMainMenu = () => {
     return (
-        <div>
+        <div className='mx-auto container'>
             <Helmet>
                 <title>Bistro | menu</title>
 

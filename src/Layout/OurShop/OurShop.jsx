@@ -17,108 +17,110 @@ const OurShop = () => {
     const drinks = menu.filter(item => item.category === 'drinks');
     return (
         <>
+            <div className='container mx-auto'>
 
-            <Helmet>
-                <title>Bistro | Order</title>
+                <Helmet>
+                    <title>Bistro | Order</title>
 
-            </Helmet>
-
-
-
-            <Cover
-                img={contact}
-                title={'OUR SHOP'}
-                des={'WOULD YOU LIKE TO HAVE A DISH'}
+                </Helmet>
 
 
 
-            />
-
-            <div>
-                <Tabs>
-                    <div className='flex justify-center mt-14'>
-                        <TabList>
-                            <Tab><h1 className='text-xl hover:text-yellow-600'>Pizza</h1></Tab>
-                            <Tab><h1 className='text-xl hover:text-yellow-600'>Soup</h1></Tab>
-                            <Tab><h1 className='text-xl hover:text-yellow-600'>Dessert</h1></Tab>
-                            <Tab><h1 className='text-xl hover:text-yellow-600'>Salad</h1></Tab>
-                            <Tab><h1 className='text-xl hover:text-yellow-600'>Drinks</h1></Tab>
-                            {/* <Tab>Title 2</Tab> */}
-                        </TabList>
-                    </div>
-
-                    <div>
-                        <TabPanel>
-                            <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 p-12'>
-                                {
-                                    Pizza.map(item => <FeaturesItem
-                                        key={item._id}
-                                        item={item}
+                <Cover
+                    img={contact}
+                    title={'OUR SHOP'}
+                    des={'WOULD YOU LIKE TO HAVE A DISH'}
 
 
-                                    />)
 
-                                }
-                            </div>
-                        </TabPanel>
-                        <TabPanel>
-                            <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 p-12'>
-                                {
-                                    soup.map(item => <FeaturesItem
-                                        key={item._id}
-                                        item={item}
+                />
 
+                <div>
+                    <Tabs>
+                        <div className='flex justify-center mt-14'>
+                            <TabList>
+                                <Tab><h1 className='text-xl hover:text-yellow-600'>Pizza</h1></Tab>
+                                <Tab><h1 className='text-xl hover:text-yellow-600'>Soup</h1></Tab>
+                                <Tab><h1 className='text-xl hover:text-yellow-600'>Dessert</h1></Tab>
+                                <Tab><h1 className='text-xl hover:text-yellow-600'>Salad</h1></Tab>
+                                <Tab><h1 className='text-xl hover:text-yellow-600'>Drinks</h1></Tab>
+                                {/* <Tab>Title 2</Tab> */}
+                            </TabList>
+                        </div>
 
-                                    />)
-
-                                }
-                            </div>
-                        </TabPanel>
-                        <TabPanel>
-                            <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 p-12'>
-                                {
-                                    dessert.map(item => <FeaturesItem
-                                        key={item._id}
-                                        item={item}
-
-
-                                    />)
-
-                                }
-                            </div>
-                        </TabPanel>
-                        <TabPanel>
-                            <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 p-12'>
-                                {
-                                    salad.map(item => <FeaturesItem
-                                        key={item._id}
-                                        item={item}
+                        <div>
+                            <TabPanel>
+                                <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 p-12'>
+                                    {
+                                        Pizza.map(item => <FeaturesItem
+                                            key={item._id}
+                                            item={item}
 
 
-                                    />)
+                                        />)
 
-                                }
-                            </div>
-                        </TabPanel>
-                        <TabPanel>
-                            <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 p-12'>
-                                {
-                                    drinks.map(item => <FeaturesItem
-                                        key={item._id}
-                                        item={item}
+                                    }
+                                </div>
+                            </TabPanel>
+                            <TabPanel>
+                                <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 p-12'>
+                                    {
+                                        soup.map(item => <FeaturesItem
+                                            key={item._id}
+                                            item={item}
 
 
-                                    />)
+                                        />)
 
-                                }
-                            </div>
-                        </TabPanel>
-                    </div>
+                                    }
+                                </div>
+                            </TabPanel>
+                            <TabPanel>
+                                <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 p-12'>
+                                    {
+                                        dessert.map(item => <FeaturesItem
+                                            key={item._id}
+                                            item={item}
 
-                </Tabs>
+
+                                        />)
+
+                                    }
+                                </div>
+                            </TabPanel>
+                            <TabPanel>
+                                <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 p-12'>
+                                    {
+                                        salad.map(item => <FeaturesItem
+                                            key={item._id}
+                                            item={item}
+
+
+                                        />)
+
+                                    }
+                                </div>
+                            </TabPanel>
+                            <TabPanel>
+                                <div className='grid lg:grid-cols-3 grid-cols-1 gap-5 p-12'>
+                                    {
+                                        drinks.map(item => <FeaturesItem
+                                            key={item._id}
+                                            item={item}
+
+
+                                        />)
+
+                                    }
+                                </div>
+                            </TabPanel>
+                        </div>
+
+                    </Tabs>
+
+                </div>
 
             </div>
-
         </>
     );
 };

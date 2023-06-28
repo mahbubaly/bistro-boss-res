@@ -6,7 +6,7 @@ import '../OurMenu/OurMenu.css'
 const OurMenu = () => {
     return (
         <>
-            <div className='bg_Open_menu bg-fixed text-white pt-8 my-20'>
+            <div className='bg_Open_menu bg-fixed container mx-auto text-white pt-8 my-20'>
                 <section>
                     <SharedTitle
                         title={"Check it out"}
@@ -17,7 +17,7 @@ const OurMenu = () => {
                 </section>
 
 
-                <div className='md:flex gap-5 justify-center items-center bg-slate-500 bg-opacity-60 pb-20 pt-12 px-36'>
+                <div className='md:flex gap-5 justify-center items-center bg-slate-500 bg-opacity-60 lg:pb-20 lg:pt-12 lg:px-36 pb-5 pt-8 px-12'>
                     <img className='lg:w-[600px]' src={img} alt="" />
                     <div className='md:ml-8 space-y-2 '>
                         <h1 className='text-xl mt-2'>March 20, 2029</h1>

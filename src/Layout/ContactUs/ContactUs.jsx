@@ -7,7 +7,7 @@ import { PhoneArrowUpRightIcon, MapPinIcon, ClockIcon } from '@heroicons/react/2
 const ContactUs = () => {
     return (
         <>
-            <div className=''>
+            <div className='mx-auto container'>
                 <Cover
                     img={img}
                     title={'CONTACT US'}

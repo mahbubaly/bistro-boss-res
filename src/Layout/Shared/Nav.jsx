@@ -39,9 +39,9 @@ const Nav = () => {
     </>
     return (
         <>
-            <div className="navbar z-10 fixed bg-opacity-25 bg-black text-white max-w-screen-xl p-4">
+            <div className="navbar z-10 fixed bg-opacity-70  bg-black text-white   lg:p-4">
                 <div className="navbar-start">
-                    <div className="dropdown lg:hidden block">
+                    <div className="dropdown lg:hidden block justify-end">
 
 
                         <label className="btn btn-circle swap swap-rotate ">
@@ -63,9 +63,9 @@ const Nav = () => {
 
                         </ul>
                     </div>
-                    <Link to='/'><a className="btn btn-ghost normal-case text-xl">BISTRO BOSS <br /> RESTAURANT </a></Link>
+                    <Link to='/'><a className="btn btn-ghost normal-case  text-xl">BISTRO BOSS <br /> RESTAURANT </a></Link>
                 </div>
-                <div className="navbar-center hidden lg:flex">
+                <div className="navbar-center hidden lg:flex ">
                     <ul className="menu menu-horizontal px-1">
                         {navbar}
                     </ul>
